@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4ED9D3BA-556D-4502-99AA-5763131F8DB9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VisionImageManager</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CD80FE524B5FDB93547DF4108D0918E8A4DCFEB7</key>
+		<string>https://github.com/VisionBao/VisionImageManager.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VisionImageManager/VisionImageManager.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CD80FE524B5FDB93547DF4108D0918E8A4DCFEB7</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/VisionBao/VisionImageManager.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CD80FE524B5FDB93547DF4108D0918E8A4DCFEB7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD80FE524B5FDB93547DF4108D0918E8A4DCFEB7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VisionImageManager</string>
+		</dict>
+	</array>
+</dict>
+</plist>
