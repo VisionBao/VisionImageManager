@@ -32,17 +32,17 @@
             case VISION_Two_Photo:
                 switch (photoMode) {
                     case VISION_TWO_Photo_Mode1:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT) andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT) andPhoto:[photoArr objectAtIndex:1]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT) andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT) andPhoto:photoArr[1]];
                         break;
                     case VISION_TWO_Photo_Mode2:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH, VIEW_HEIGHT_2) andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2, VIEW_WIDTH, VIEW_HEIGHT_2) andPhoto:[photoArr objectAtIndex:1]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH, VIEW_HEIGHT_2) andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2, VIEW_WIDTH, VIEW_HEIGHT_2) andPhoto:photoArr[1]];
                         
                         break;
                     case VISION_TWO_Photo_Mode3:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH, VIEW_HEIGHT)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2,VIEW_HEIGHT_2 , VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:1]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH, VIEW_HEIGHT)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2,VIEW_HEIGHT_2 , VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[1]];
                     default:
                         break;
                 }
@@ -50,30 +50,30 @@
             case VISION_Three_Photo:
                 switch (photoMode) {
                     case VISION_THREE_Photo_Mode1:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2 ,VIEW_HEIGHT )  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2,VIEW_HEIGHT_2 , VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:2]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2 ,VIEW_HEIGHT )  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2,VIEW_HEIGHT_2 , VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[2]];
                         break;
                     case VISION_THREE_Photo_Mode2:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_WIDTH)  andPhoto:[photoArr objectAtIndex:2]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_WIDTH)  andPhoto:photoArr[2]];
                         
                         break;
                     case VISION_THREE_Photo_Mode3:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH , VIEW_HEIGHT_3 * 2)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3 )  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_3, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:2]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH , VIEW_HEIGHT_3 * 2)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3 )  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_3, VIEW_HEIGHT_3)  andPhoto:photoArr[2]];
                         break;
                     case VISION_THREE_Photo_Mode4:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH , VIEW_HEIGHT_3 * 2)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_3 , VIEW_HEIGHT_3 )  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 , VIEW_HEIGHT_3 * 2, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:2]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH , VIEW_HEIGHT_3 * 2)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_3 , VIEW_HEIGHT_3 )  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 , VIEW_HEIGHT_3 * 2, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3)  andPhoto:photoArr[2]];
                         break;
                     case VISION_THREE_Photo_Mode5:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3 , VIEW_HEIGHT_3 )  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, 0, VIEW_WIDTH_3 * 2 , VIEW_HEIGHT_3 )  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3, VIEW_WIDTH, VIEW_HEIGHT_3 * 2)  andPhoto:[photoArr objectAtIndex:2]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3 , VIEW_HEIGHT_3 )  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, 0, VIEW_WIDTH_3 * 2 , VIEW_HEIGHT_3 )  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3, VIEW_WIDTH, VIEW_HEIGHT_3 * 2)  andPhoto:photoArr[2]];
                         break;
                         
                     default:
@@ -83,46 +83,46 @@
             case VISION_Four_Photo:
                 switch (photoMode) {
                     case VISION_FOUR_Photo_Mode1:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_2, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:3]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_2, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[3]];
                         break;
                     case VISION_FOUR_Photo_Mode2:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:3]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[3]];
                         break;
                     case VISION_FOUR_Photo_Mode3:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, 0, VIEW_HEIGHT_3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, VIEW_HEIGHT_2, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:3]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_2)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, 0, VIEW_HEIGHT_3, VIEW_HEIGHT_2)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, VIEW_HEIGHT_2, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_2)  andPhoto:photoArr[3]];
                         break;
                     case VISION_FOUR_Photo_Mode4:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, 0,VIEW_WIDTH_3 * 2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2,VIEW_WIDTH_3 * 2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, VIEW_HEIGHT_2, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:3]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, 0,VIEW_WIDTH_3 * 2, VIEW_HEIGHT_2)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2,VIEW_WIDTH_3 * 2, VIEW_HEIGHT_2)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, VIEW_HEIGHT_2, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:photoArr[3]];
                         break;
                     case VISION_FOUR_Photo_Mode5:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3, VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:3]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3, VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[3]];
                         break;
                     case VISION_FOUR_Photo_Mode6:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0,VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2 )  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3 * 2,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3,VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2)  andPhoto:[photoArr objectAtIndex:3]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0,VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2 )  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3 * 2,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3,VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2)  andPhoto:photoArr[3]];
                         break;
                     case VISION_FOUR_Photo_Mode7:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3, VIEW_WIDTH_3)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, 0, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3, VIEW_WIDTH_3, VIEW_WIDTH_3 * 2)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, VIEW_HEIGHT_3 , VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3 * 2)  andPhoto:[photoArr objectAtIndex:3]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3, VIEW_WIDTH_3)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, 0, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3, VIEW_WIDTH_3, VIEW_WIDTH_3 * 2)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, VIEW_HEIGHT_3 , VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3 * 2)  andPhoto:photoArr[3]];
                         break;
                     default:
                         break;
@@ -133,46 +133,46 @@
             case VISION_Five_Photo:
                 switch (photoMode) {
                     case VISION_FIVE_Photo_Mode1:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, 0, VIEW_WIDTH_3, VIEW_HEIGHT_2 )  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, 0,VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2,VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:3]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_2 ,VIEW_WIDTH_2, VIEW_HEIGHT_2 )  andPhoto:[photoArr objectAtIndex:4]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, 0, VIEW_WIDTH_3, VIEW_HEIGHT_2 )  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, 0,VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2,VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[3]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_2 ,VIEW_WIDTH_2, VIEW_HEIGHT_2 )  andPhoto:photoArr[4]];
                         break;
                     case VISION_FIVE_Photo_Mode2:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3, VIEW_WIDTH_2, VIEW_HEIGHT_3 )  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_2 , VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:3]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_2, VIEW_HEIGHT_3 )  andPhoto:[photoArr objectAtIndex:4]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3, VIEW_WIDTH_2, VIEW_HEIGHT_3 )  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_2 , VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[3]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_2, VIEW_HEIGHT_3 )  andPhoto:photoArr[4]];
                         break;
                     case VISION_FIVE_Photo_Mode3:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_4 * 3, VIEW_HEIGHT)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, 0, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4 * 2, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:3]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:4]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_4 * 3, VIEW_HEIGHT)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, 0, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4 * 2, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:photoArr[3]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:photoArr[4]];
                             break;
                     case VISION_FIVE_Photo_Mode4:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3 * 2)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, 0, VIEW_WIDTH_3, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3,VIEW_WIDTH_3, VIEW_HEIGHT_3 )  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:3]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_3, VIEW_HEIGHT_3 )  andPhoto:[photoArr objectAtIndex:4]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3 * 2)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, 0, VIEW_WIDTH_3, VIEW_HEIGHT_3)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3,VIEW_WIDTH_3, VIEW_HEIGHT_3 )  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3)  andPhoto:photoArr[3]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_3, VIEW_HEIGHT_3 )  andPhoto:photoArr[4]];
                         break;
                     case VISION_FIVE_Photo_Mode5:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_WIDTH_3 * 2)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3, VIEW_WIDTH_2, VIEW_HEIGHT_3 )  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_WIDTH_3 * 2, VIEW_WIDTH_2, VIEW_HEIGHT_3 )  andPhoto:[photoArr objectAtIndex:3]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_2, VIEW_HEIGHT_3 )  andPhoto:[photoArr objectAtIndex:4]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_WIDTH_3 * 2)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3, VIEW_WIDTH_2, VIEW_HEIGHT_3 )  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_WIDTH_3 * 2, VIEW_WIDTH_2, VIEW_HEIGHT_3 )  andPhoto:photoArr[3]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_2, VIEW_HEIGHT_3 )  andPhoto:photoArr[4]];
                         break;
                     case VISION_FIVE_Photo_Mode6:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH, VIEW_HEIGHT_4 * 3)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_4, VIEW_HEIGHT_4 )  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 2, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_4, VIEW_HEIGHT_4 )  andPhoto:[photoArr objectAtIndex:3]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_4, VIEW_HEIGHT_4 )  andPhoto:[photoArr objectAtIndex:4]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH, VIEW_HEIGHT_4 * 3)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_4, VIEW_HEIGHT_4 )  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 2, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_4, VIEW_HEIGHT_4 )  andPhoto:photoArr[3]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_4, VIEW_HEIGHT_4 )  andPhoto:photoArr[4]];
                         break;
                         
                     default:
@@ -183,36 +183,36 @@
             case VISION_Six_Photo:
                 switch (photoMode) {
                     case VISION_SIX_Photo_Mode1:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, 0, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, 0, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:3]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, VIEW_HEIGHT_2, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:4]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, VIEW_HEIGHT_2, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:5]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, 0, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, 0, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:photoArr[3]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3, VIEW_HEIGHT_2, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:photoArr[4]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_3 * 2, VIEW_HEIGHT_2, VIEW_WIDTH_3, VIEW_HEIGHT_2)  andPhoto:photoArr[5]];
                         break;
                     case VISION_SIX_Photo_Mode2:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3 ,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:3]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3 * 2,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:4]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:[photoArr objectAtIndex:5]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3 ,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[3]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_3 * 2,VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[4]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_3 * 2, VIEW_WIDTH_2, VIEW_HEIGHT_3)  andPhoto:photoArr[5]];
                         break;
                     case VISION_SIX_Photo_Mode3:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_4 * 3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(0,VIEW_HEIGHT_2 , VIEW_WIDTH_4 * 3, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, 0,VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:3]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4 * 2, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:4]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:5]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_4 * 3, VIEW_HEIGHT_2)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(0,VIEW_HEIGHT_2 , VIEW_WIDTH_4 * 3, VIEW_HEIGHT_2)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, 0,VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:photoArr[3]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4 * 2, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:photoArr[4]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_4 * 3, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_4, VIEW_HEIGHT_4)  andPhoto:photoArr[5]];
                         break;
                     case VISION_SIX_Photo_Mode4:
-                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:0]];
-                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2,VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:[photoArr objectAtIndex:1]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:2]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_4 , VIEW_WIDTH_2, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:3]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_4 * 2, VIEW_WIDTH_2, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:4]];
-                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_2, VIEW_HEIGHT_4)  andPhoto:[photoArr objectAtIndex:5]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, 0, VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[0]];
+                        [self creatScroolViewWithFrame:CGRectMake(0, VIEW_HEIGHT_2,VIEW_WIDTH_2, VIEW_HEIGHT_2)  andPhoto:photoArr[1]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, 0, VIEW_WIDTH_2, VIEW_HEIGHT_4)  andPhoto:photoArr[2]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_4 , VIEW_WIDTH_2, VIEW_HEIGHT_4)  andPhoto:photoArr[3]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_4 * 2, VIEW_WIDTH_2, VIEW_HEIGHT_4)  andPhoto:photoArr[4]];
+                        [self creatScroolViewWithFrame:CGRectMake(VIEW_WIDTH_2, VIEW_HEIGHT_4 * 3, VIEW_WIDTH_2, VIEW_HEIGHT_4)  andPhoto:photoArr[5]];
                         break;
 
                         
